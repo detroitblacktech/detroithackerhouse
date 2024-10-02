@@ -1,69 +1,85 @@
 
+(function() {
+
+    /* ====================
+    Preloader
+    ======================= */
+	window.onload = function () {
+		window.setTimeout(fadeout, 300);
+	}
+
+	function fadeout() {
+		document.querySelector('.preloader').style.opacity = '0';
+		document.querySelector('.preloader').style.display = 'none';
+	}
 
 
-$(function () {
-"use strict";
+    window.onscroll = function () {
+        var header_navbar = document.querySelector(".hero-section-wrapper-2 .header");
+        var sticky = header_navbar.offsetTop;
 
+        if (window.pageYOffset > sticky) {
+            header_navbar.classList.add("sticky");
+        } else {
+            header_navbar.classList.remove("sticky");
+        }
 
-	// data - background
-	$("[data-background]").each(function () {
-		$(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
-	});
+        // show or hide the back-top-top button
+        var backToTo = document.querySelector(".scroll-top");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            backToTo.style.display = "flex";
+        } else {
+            backToTo.style.display = "none";
+        }
+    };
 
-	// contact-form 
-	$(".contact-btn").on('click', function () {
-		$(".contact-wrapper").addClass("show");
-	});
-	$(".close").on('click', function () {
-		$(".contact-wrapper").removeClass("show");
-	});
+      // header-5  toggler-icon
+      let navbarToggler2 = document.querySelector(".header-2 .navbar-toggler");
+      var navbarCollapse2 = document.querySelector(".header-2 .navbar-collapse");
 
-	// contact-form-28
-	$("#contact-btn").on('click', function () {
-		$("#contact-wrapper").addClass("show");
-	});
-	$(".close").on('click', function () {
-		$("#contact-wrapper").removeClass("show");
-	});
-	// subscribe-form-28
-	$("#subscribe-btn").on('click', function () {
-		$("#subscribe-wrapper").addClass("show");
-	});
-	$(".close").on('click', function () {
-		$("#subscribe-wrapper").removeClass("show");
-	});
+      document.querySelectorAll(".header-2 .page-scroll").forEach(e =>
+          e.addEventListener("click", () => {
+              navbarToggler2.classList.remove("active");
+              navbarCollapse2.classList.remove('show')
+          })
+      );
+      navbarToggler2.addEventListener('click', function() {
+          navbarToggler2.classList.toggle("active");
+      })
 
-	// sidebar
-	$(".menu-toggle-btn").on('click', function () {
-		$(".sidebar").addClass("show");
-	});
-	$(".close").on('click', function () {
-		$(".sidebar").removeClass("show");
-	});
+    // section menu active
+	function onScroll(event) {
+		var sections = document.querySelectorAll('.page-scroll');
+		var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
-	//Scroll top 
-	$(".scroll-top").click(function () {
-		$("html,body").animate({ scrollTop: 0 }, 1000);
-	});
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 180) { $(".scroll-top").fadeIn(); }
-		else {
-			$(".scroll-top").fadeOut();
+		for (var i = 0; i < sections.length; i++) {
+			var currLink = sections[i];
+			var val = currLink.getAttribute('href');
+			var refElement = document.querySelector(val);
+			var scrollTopMinus = scrollPos + 73;
+			if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+				document.querySelector('.page-scroll').classList.remove('active');
+				currLink.classList.add('active');
+			} else {
+				currLink.classList.remove('active');
+			}
 		}
-	});
+	};
 
-	//Countdown
+    window.document.addEventListener('scroll', onScroll);
 
-    $('[data-countdown]').each(function () {
-		var $this = $(this),
-			finalDate = $(this).data('countdown');
-		$this.countdown(finalDate, function (event) {
-			$this.html(event.strftime('<div class="countdown d-flex"><div class="single-count-content"><span class="count">%D</span><p class="text">Days</p></div><div class="single-count-content"><span class="count">%H</span><p class="text">Hours</p></div><div class="single-count-content"><span class="count">%M</span><p class="text">Minutes</p></div><div class="single-count-content"><span class="count">%S</span><p class="text">Seconds</p></div></div>'));
-		});
-	});
+
+      //====== counter up 
+      var cu = new counterUp({
+        start: 0,
+        duration: 2000,
+        intvalues: true,
+        interval: 100,
+        append: " ",
+      });
+      cu.start();
 
 	// WOW active
-	new WOW().init();
+    new WOW().init();
 
-});	
-
+})();
