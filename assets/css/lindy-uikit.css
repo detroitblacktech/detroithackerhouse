@@ -930,6 +930,11 @@ p {
   }
 }
 
+.feature-style-2 .feature-img img {
+  max-width: 545px;
+  /* max-height: 575px; */
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .feature-style-2 .feature-img {
     position: static;
@@ -938,12 +943,11 @@ p {
     margin-bottom: 50px;
     padding: 0 30px;
   }
+  .feature-style-2 .feature-img img {
+    max-width: 400px;
+  }
 }
 
-.feature-style-2 .feature-img img {
-  /* max-width: 100%; */
-  max-height: 575px;
-}
 
 /* ============================= 
     TEAM-1 CSS
