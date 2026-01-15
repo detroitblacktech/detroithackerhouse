@@ -13,6 +13,7 @@ You’ll walk away with an understanding of:
 
 RSVP: https://forms.gle/S26o5Gvmd6J1axEM6
 
+Thumbnail: https://drive.google.com/file/d/1MNi2o2KSGG1mnYascOc64fPbUufF55JX/view?usp=sharing
 --
 
 # The Lean Startup Methodology
