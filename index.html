@@ -1,662 +1,795 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM35TMQMR8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GM35TMQMR8');
-    </script>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Detroit Hacker House</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
-    <link rel="stylesheet" href="assets/css/lindy-uikit.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detroit Hacker House | Build. Ship. Belong.</title>
+    <meta
+      name="description"
+      content="Detroit Hacker House is where builders become founders. Residential accelerator and community programming in Detroit, MI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- ========================= preloader start ========================= -->
-    <div class="preloader">
-      <div class="loader">
-        <div class="spinner">
-          <div class="spinner-container">
-            <div class="spinner-rotator">
-              <div class="spinner-left">
-                <div class="spinner-circle"></div>
-              </div>
-              <div class="spinner-right">
-                <div class="spinner-circle"></div>
-              </div>
-            </div>
-          </div>
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="#home" class="logo">
+          <img
+            src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767814045/dhh-logo-icon_c6qfja.png"
+            alt="Detroit Hacker House"
+            class="logo-icon"
+          />
+          <span class="logo-text">Detroit<span class="logo-accent">Hacker</span>House</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#program">Program</a>
+          <a href="live-inn-play.html">LIPH Residency</a>
+          <a href="index.html#community">Community</a>
+          <a href="events.html">Events</a>
+          <a href="index.html#team">Team</a>
+          <a href="index.html#contact">Contact</a>
         </div>
-      </div>
-    </div>
-    <!-- ========================= preloader end ========================= -->
-
-    <!-- ========================= hero-section-wrapper-2 start ========================= -->
-    <section id="home" class="hero-section-wrapper-2">
-
-      <!-- ========================= header-2 start ========================= -->
-      <header class="header header-2">
-        <div class="navbar-area">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/dhh-logo-icon.png" alt="Logo" />
-                     <!-- <h4>Detroit Hacker House</h4> -->
-                  </a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon"></span>
-                    <span class="toggler-icon"></span>
-                    <span class="toggler-icon"></span>
-                  </button>
-
-                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent2">
-                    <ul id="nav2" class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="page-scroll active" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#program">Program</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#team">Team</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#application">Application</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#contact">Contact</a>
-                      </li>
-                    </ul>
-                    <a href="live-inn-play.html" class="button button-sm radius-10 d-none d-lg-flex">Live Innovate Play House</a>
-                  </div>
-                  <!-- navbar collapse -->
-                </nav>
-                <!-- navbar -->
-              </div>
-            </div>
-            <!-- row -->
-          </div>
-          <!-- container -->
+        <div class="nav-actions">
+          <a href="#apply" class="btn btn-primary">Apply Now</a>
         </div>
-        <!-- navbar area -->
-      </header>
-      <!-- ========================= header-2 end ========================= -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
-      <!-- ========================= hero-2 start ========================= -->
-      <div class="hero-section hero-style-2">
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
         <div class="container">
-          <div class="row align-items-end">
-            <div class="col-lg-6">
-              <div class="hero-content-wrapper">
-                <h4 class="wow fadeInUp" data-wow-delay=".2s">Come build with us</h4>
-                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">Detroit Hacker House</h2>
-                <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">
-                  Our goal is to incubate technology companies through a residential, cohort-based accelerator program in Detroit, MI. 
-                  We provide room, board, mentorship and curriculum designed to remove distractions and barriers for founders to focus on building their product and business model through MVP validation.
-                </p>
-                <div class="buttons">
-                  <a href="live-inn-play.html" rel="nofollow" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">Wayne State Students Apply Now!</a>
-                </div>
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="eyebrow">Come build with us</span>
+              <h1>Build. Ship. <span class="text-accent">Belong.</span></h1>
+              <p class="hero-text">
+                Detroit Hacker House is where builders become founders. We run a
+                residential accelerator and community programming designed to
+                take you from idea to launched product.
+              </p>
+              <div class="hero-ctas">
+                <a href="#apply" class="btn btn-primary btn-lg">
+                  Apply Now
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#program" class="btn btn-outline btn-lg">Learn More</a>
               </div>
+              <p class="hero-note">
+                Students of all backgrounds. Beginners welcome.
+              </p>
             </div>
-            <div class="col-lg-6">
-              <div class="hero-image">
-                <img src="assets/img/hero/hero-2/mvpdev.png" alt="" class="wow fadeInRight" id="mvpdev" data-wow-delay=".2s">
-                <!-- <img src="assets/img/hero/hero-2/paattern.svg" alt="" class="shape shape-1"> -->
+            <div class="hero-visual">
+              <div class="hero-video-wrapper">
+                <video autoplay muted loop playsinline class="hero-video">
+                  <source
+                    src="https://res.cloudinary.com/dby7xkzbm/video/upload/v1767834640/Untitled_design_qq2hc9.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ========================= hero-2 end ========================= -->
-
-    </section>
-    <!-- ========================= hero-section-wrapper-2 end ========================= -->
-
-    <!-- ========================= feature style-2 start ========================= -->
-    <section id="program" class="feature-section feature-style-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-xl-7 col-lg-10 col-md-9">
-                <div class="section-title mb-60">
-                  <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Build > Ship > Learn</h3>
-                  <p class="wow fadeInUp" data-wow-delay=".4s">
-                    Live and work alongside your House Manager and EIRs who help you to build your product through mentorship and milestones
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-                  <div class="icon">
-                    <i class="lni lni-vector"></i>
-                  </div>
-                  <div class="content">
-                    <h5 class="mb-25">MVP (Minimally Viable Product)</h5>
-                    <p>We coach founders through the process of applying their customer discovery research to building an MVP and iterating to validate the key features and business model from customer response.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-                  <div class="icon">
-                    <i class="lni lni-layers"></i>
-                  </div>
-                  <div class="content">
-                    <h5 class="mb-25">Mentorship</h5>
-                    <p>In addition to working alongside our House Manager, EIRs or Entrepreneurs in Residence provide support and feedback through workshops, office hours, and supporting unique needs depending on the startup.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-                  <div class="icon">
-                    <i class="lni lni-layout"></i>
-                  </div>
-                  <div class="content">
-                    <h5 class="mb-25">Housing</h5>
-                    <p>Founders live alongside each other as roommates with a House Manager with free room, board, house keeping, laundry, wifi, in-home deskspace, and team outings.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
-                  <div class="icon">
-                    <i class="lni lni-display"></i>
-                  </div>
-                  <div class="content">
-                    <h5 class="mb-25">Venture Backable</h5>
-                    <p>We work closely with VCs in setting key program targets that build investor confidence in the startup.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="feature-img wow fadeInLeft" data-wow-delay=".2s">
-        <img src="assets/img/feature/mvpcoach.png" alt="">
-      </div>
-    </section>
-		<!-- ========================= feature style-2 end ========================= -->
-
-    <!-- ========================= about style-3 start ========================= -->
-    <!-- <section id="about" class="about-section about-style-3">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="about-image wow fadeInLeft" data-wow-delay=".2s">
-              <img src="assets/img/about/about-3/about-img.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content-wrapper">
-              <div class="section-title mb-40">
-                <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">We're here to </h3>
-                <p class="wow fadeInUp" data-wow-delay=".4s">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed, Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed,</p>
-              </div>
-              <div class="counter-up-wrapper mb-40 wow fadeInUp" data-wow-delay=".6s">
-                <div class="single-counter">
-                  <h4 class="countup" id="secondo1" cup-end="123" cup-append="M">123 M</h4>
-                  <h6>Happy Client</h6>
-                </div>
-                <div class="single-counter">
-                  <h4 class="countup" id="secondo2" cup-end="1434" cup-append="K">1434 K</h4>
-                  <h6>Project Done</h6>
-                </div>
-                <div class="single-counter">
-                  <h4 class="countup" id="secondo3" cup-end="134" cup-append="K">134 K</h4>
-                  <h6>Award Win</h6>
-                </div>
-              </div>
-              <a href="#0" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s">Learn More</a>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
-    <!-- ========================= about style-3 end ========================= -->
+      </section>
 
+      <!-- Partners Bar -->
+      <section class="partners-bar">
+        <div class="container">
+          <span class="partners-title">Ecosystem Partners</span>
+          <div class="partners-logos">
+            <img
+              src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767817413/wsu-primary-stacked-color-300_wijwnu.png"
+              alt="Wayne State University"
+              class="partner-logo"
+            />
+            <img
+              src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767817342/TechTown_PrimaryLogo_RBG_Full-Color_wh8vb2.svg"
+              alt="TechTown Detroit"
+              class="partner-logo"
+            />
+            <img
+              src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767817337/invest-detroit_e2h5ls.png"
+              alt="Invest Detroit"
+              class="partner-logo"
+            />
+          </div>
+        </div>
+      </section>
 
-              <!-- <div class="container pt-60 pb-60">
-                <h4 class="wow fadeInUp" data-wow-delay=".2s">Apply Now</h4>
-                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">Detroit Hacker House 2025 Cohorts</h2>
-                <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">
-                  We are accepting applications for our 2025 programs starting January. 
-                  Finalized cohort details will be added as they are confirmed, however, applications will be accepted on-going for founders that are serious about participating and want to get ahead of the pack.
-
-                </p>
-                <div class="buttons">
-                  <a href="https://forms.gle/pUUgXPBniRpzCR3u6" rel="nofollow" target="blank" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">Submit your application</a>
+      <!-- About / Value Prop Section -->
+      <section class="value-section">
+        <div class="container">
+          <div class="value-grid">
+            <div class="value-images">
+              <img
+                src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/0574de990423bea99c131a033c145a3a_yx8xes.png"
+                alt="Community event at Detroit Hacker House"
+                class="value-img-main"
+              />
+              <div class="value-img-badge">
+                <div class="badge-content">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                      fill="#F5A623"
+                    />
+                  </svg>
+                  <span>#1</span>
+                  <small>Detroit Accelerator</small>
                 </div>
-              </div> -->
-
-		<!-- ========================= pricing style-1 start ========================= -->
-		<!-- <section id="pricing" class="pricing-section pricing-style-1 bg-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
-            <div class="section-title text-center mb-60">
-              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Pricing Plan</h3>
-              <p class="wow fadeInUp" data-wow-delay=".4s">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p>
+              </div>
+            </div>
+            <div class="value-content">
+              <span class="eyebrow">Why Detroit Hacker House</span>
+              <h2>
+                A Team Creates <span class="text-accent">Amazing Work</span> for
+                Your Startup
+              </h2>
+              <p>
+                Most programs teach you about startups. We put you in the room
+                to build one. Our model removes the barriers that slow founders
+                down – cost of living, isolation, access to mentors, and the gap
+                between learning and doing.
+              </p>
+              <p>
+                Founders in the House live together, build together, and ship
+                together. The result: real products, real traction, and founders
+                prepared for what comes next.
+              </p>
+              <a href="#program" class="btn btn-primary">
+                View Program
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-pricing wow fadeInUp" data-wow-delay=".2s">
-              <div class="image">
-                <img src="assets/img/pricing/pricing-1/pricing-1.svg" alt="">
-              </div>
-              <h6>Basic Design</h6>
-              <h4>Web Design</h4>
-              <h3>$ 29.00</h3>
-              <ul>
-                <li> <i class="lni lni-checkmark-circle"></i> Carefully crafted components</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Amazing page examples</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Super friendly support team</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Awesome Support</li>
-              </ul>
-              <a href="#0" class="button radius-30">Get Started</a>
-            </div>
+      <!-- Program Features Section -->
+      <section id="program" class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">How it works</span>
+            <h2>Build > Ship > Learn</h2>
+            <p>
+              Our program is built around one principle: you learn by doing.
+              Every founder in the House is expected to ship – not someday, but
+              now.
+            </p>
           </div>
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-pricing active wow fadeInUp" data-wow-delay=".4s">
-              <span class="button button-sm radius-30 popular-badge">Popular</span>
-              <div class="image">
-                <img src="assets/img/pricing/pricing-1/pricing-2.svg" alt="">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1B4D4A"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
               </div>
-              <h6>Standard Design</h6>
-              <h4>Web Development</h4>
-              <h3>$ 89.00</h3>
-              <ul>
-                <li> <i class="lni lni-checkmark-circle"></i> Carefully crafted components</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Amazing page examples</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Super friendly support team</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Awesome Support</li>
-              </ul>
-              <a href="#0" class="button radius-30">Get Started</a>
+              <h3>MVP Development</h3>
+              <p>
+                We coach you through building a minimum viable product and
+                getting it in front of real customers. No theory. Real
+                validation.
+              </p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-8 col-sm-10">
-            <div class="single-pricing wow fadeInUp" data-wow-delay=".6s">
-              <div class="image">
-                <img src="assets/img/pricing/pricing-1/pricing-3.svg" alt="">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1B4D4A"
+                  stroke-width="2"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path
+                    d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                  />
+                </svg>
               </div>
-              <h6>Pro Design</h6>
-              <h4>Design & Develop</h4>
-              <h3>$ 199.00</h3>
-              <ul>
-                <li> <i class="lni lni-checkmark-circle"></i> Carefully crafted components</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Amazing page examples</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Super friendly support team</li>
-                <li> <i class="lni lni-checkmark-circle"></i> Awesome Support</li>
-              </ul>
-              <a href="#0" class="button radius-30">Get Started</a>
+              <h3>Mentorship</h3>
+              <p>
+                Work directly with our House Manager and Entrepreneurs in
+                Residence through workshops, office hours, and one-on-one
+                support.
+              </p>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- ========================= pricing style-1 end ========================= -->
-
-		<!-- ========================= team style-1 start ========================= -->
-		<section id="team" class="team-section team-style-1">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
-            <div class="section-title text-center mb-60">
-              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Our Team</h3>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                As the co-founders of Detroit Black Tech and Hacking With The Homies Developer Conference, we are uniquely focused on furthering the Detroit Tech ecosystem while making sure Black and Brown Techies are supported.
-                Since joining forces around 2017 we have worked to build programs and events that enable Developers to build better, faster and in a supportive community.
-                We are furthering this vision by working on building technical founders as well as providing support to non-technical founders in our community.
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1B4D4A"
+                  stroke-width="2"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9,22 9,12 15,12 15,22" />
+                </svg>
+              </div>
+              <h3>Housing</h3>
+              <p>
+                Live alongside other founders with free room, board, wifi,
+                housekeeping, desk space, and team outings. No distractions.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1B4D4A"
+                  stroke-width="2"
+                >
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+              </div>
+              <h3>Venture Backable</h3>
+              <p>
+                We align our program milestones with what investors actually
+                look for – so when you pitch, you're ready.
               </p>
             </div>
           </div>
         </div>
-        
-        <div class="row justify-content-center">
-          <div class="col-xl-3 col-md-6 col-sm-10">
-            <div class="single-team wow fadeInUp" data-wow-delay=".2s">
-              <div class="image">
-                <img src="assets/img/team/team-1/jeseekia-vaughn.jpg" alt="">
+      </section>
+
+      <!-- Building Section with Image -->
+      <section class="building-section">
+        <div class="container">
+          <div class="building-grid">
+            <div class="building-content">
+              <span class="eyebrow">The Space</span>
+              <h2>
+                Building bridges between
+                <span class="text-accent">ideas</span> and
+                <span class="text-accent">execution</span>
+              </h2>
+              <p>
+                With dedicated workspace, high-speed wifi, and a community of
+                builders around you, the House is designed to remove every
+                barrier between you and shipping your product.
+              </p>
+              <p>
+                We evaluate founders not by their pitch decks, but by their
+                willingness to build. If you're ready to ship, we're ready to
+                support you.
+              </p>
+              <a href="#apply" class="btn btn-outline">
+                View Details
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+            <div class="building-images">
+              <img
+                src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813519/015961c1a5123170659562833358e578_arlklo.gif"
+                alt="Workspace at Detroit Hacker House"
+                class="building-img"
+              />
+              <img
+                src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813519/ef48caa6a09864e3d437c179b6dbc276_wyzys0.png"
+                alt="Builder working at Detroit Hacker House"
+                class="building-img-secondary"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="community" class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">From the community</span>
+            <h2>We Believe People We Trust</h2>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p>
+                I came in with just an idea. I walked out with a live app and a
+                pitch deck – hours before the event even ended. That's the
+                standard here.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">A</div>
+                <div class="author-info">
+                  <strong>Arion</strong>
+                  <span>Wayne State Grad, Data Science</span>
+                </div>
               </div>
-              <div class="info">
-                <h6>Jeseekia Vaughn</h6>
-                <p>Detroit Hacker House Program Director</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="quote-mark">"</div>
+              <p>
+                This space values presence over polish. I finally found a
+                community where I could be myself and build something real
+                without the pressure to perform.
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">A</div>
+                <div class="author-info">
+                  <strong>Ashley</strong>
+                  <span>Apple Developer Academy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="events" class="events-section">
+        <div class="container">
+          <div class="section-header-row">
+            <div>
+              <span class="eyebrow">What's happening</span>
+              <h2>Whats New at Detroit Hacker House?</h2>
+            </div>
+            <a href="events.html" class="see-all-link">See All →</a>
+          </div>
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/78e252ac64313f65383563c203a2f0cc_bc5auu.png"
+                  alt="Detroit cityscape"
+                />
+                <span class="event-tag">Campus Event</span>
+              </div>
+              <div class="event-content">
+                <span class="event-date">15 Jan 2026</span>
+                <h3>Winterfest Activation</h3>
                 <p>
-                  Entrepreneur, Senior Software Engineer, MVP Developer, Developer Educator, and Machine Learning Engineer in startups
-                  <br>
+                  Catch us at Wayne State's Winterfest. Come find us, grab some
+                  swag, and sign up for what's next.
                 </p>
-                <ul class="socials">
-                  <li>
-                    <a href="https://linkedin.com/in/jeseekiavaughn"> <i class="lni lni-linkedin-original"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://youtube.com/@metadevgirl"> <i class="lni lni-youtube"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://metadevgirl.com"> <i class="lni lni-website"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/metadevgirl"> <i class="lni lni-instagram-filled"></i> </a>
-                  </li>
-                </ul>
+                <a href="#" class="read-more">RSVP →</a>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-10">
-            <div class="single-team wow fadeInUp" data-wow-delay=".4s">
-              <div class="image">
-                <img src="assets/img/team/team-1/mack-hendricks.jpg" alt="">
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/0574de990423bea99c131a033c145a3a_yx8xes.png"
+                  alt="Community building"
+                />
+                <span class="event-tag">Buildathon</span>
               </div>
-              <div class="info">
-                <h6>Mack Hendricks</h6>
-                <p>Detroit Black Tech Executive Director</p>
+              <div class="event-content">
+                <span class="event-date">5-7 Feb 2026</span>
+                <h3>Buildathon #1</h3>
                 <p>
-                  Entrepreneur, Principal Systems Engineer, and Senior Solutions Engineer in startups and the Fortune 500
+                  A three-day event. Day one: strategy. Day two: build. Day
+                  three: ship. First dollar made wins.
                 </p>
-                <ul class="socials">
-                  <li>
-                    <a href="https://mackhendricks.com"> <i class="lni lni-website"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://twitch.com/mackhendricks"> <i class="lni lni-twitch"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/machinemaker"> <i class="lni lni-instagram-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/mackhendricks"> <i class="lni lni-linkedin-original"></i> </a>
-                  </li>
-                </ul>
+                <a href="https://forms.gle/pW2UPTiWEzTHCoDa7" class="read-more" target="_blank">RSVP →</a>
               </div>
             </div>
-          </div>
-          <!-- <div class="col-xl-3 col-md-6 col-sm-10">
-            <div class="single-team wow fadeInUp" data-wow-delay=".6s">
-              <div class="image">
-                <img src="assets/img/team/team-1/team-3.png" alt="">
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813519/ef48caa6a09864e3d437c179b6dbc276_wyzys0.png"
+                  alt="Builder working"
+                />
+                <span class="event-tag">Workshop</span>
               </div>
-              <div class="info">
-                <h6>Jonathon Smith</h6>
-                <p>Brand Designer</p>
-                <ul class="socials">
-                  <li>
-                    <a href="#0"> <i class="lni lni-facebook-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-twitter-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-instagram-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-linkedin-original"></i> </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-10">
-            <div class="single-team wow fadeInUp" data-wow-delay=".8s">
-              <div class="image">
-                <img src="assets/img/team/team-1/team-4.png" alt="">
-              </div>
-              <div class="info">
-                <h6>Gray Simon</h6>
-                <p>Frontend Developer</p>
-                <ul class="socials">
-                  <li>
-                    <a href="#0"> <i class="lni lni-facebook-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-twitter-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-instagram-filled"></i> </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-linkedin-original"></i> </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-        </div>
-
-      </div>
-    </section>
-    <!-- ========================= team style-1 end ========================= -->
-
-              <div id="application" class="container pt-60 pb-60">
-                <h4 class="wow fadeInUp" data-wow-delay=".2s">Apply Now</h4>
-                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">Detroit Hacker House 2025 Cohorts</h2>
-                <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">
-                  We are partnering with TechTown Detroit to host the Live Innovate Play House for Wayne State students and recent grads. 
-                  Learn more and apply on the program page or submit a general application if you're interested in future cohorts!
+              <div class="event-content">
+                <span class="event-date">Coming Soon</span>
+                <h3>Pre-Pitch Party</h3>
+                <p>
+                  Practice your pitch in a low-pressure room before you need it
+                  for real. Get feedback and sharpen your story.
                 </p>
-                <div class="buttons">
-                  <a href="live-inn-play.html" rel="nofollow" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">Live Innovate Play House</a>
-                  <a href="https://forms.gle/pUUgXPBniRpzCR3u6" rel="nofollow" target="blank" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">General Application</a>
-                </div>
+                <a href="#" class="read-more">Get Notified →</a>
               </div>
-
-    <!-- ========================= contact style-6 start ========================= -->
-    <section id="contact" class="contact-section contact-style-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="contact-form-wrapper">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHl9lX6zKlkk5vD0YdR-PI_BnLk1tndl8okpN16LnSxSd9wA/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-              <!-- <form action="assets/php/contact.php" method="POST">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="single-input">
-                      <label for="name">Name</label>
-                      <input type="text" id="name" name="name" class="form-input" placeholder="Name">
-                      <i class="lni lni-user"></i>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="single-input">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" name="email" class="form-input" placeholder="Email">
-                      <i class="lni lni-envelope"></i>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="single-input">
-                      <label for="number">Number</label>
-                      <input type="text" id="number" name="number" class="form-input" placeholder="Number">
-                      <i class="lni lni-phone"></i>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="single-input">
-                      <label for="subject">Subject</label>
-                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
-                      <i class="lni lni-text-format"></i>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="single-input">
-                      <label for="message">Message</label>
-                      <textarea name="message" id="message" class="form-input" placeholder="Message" rows="6"></textarea>
-                      <i class="lni lni-comments-alt"></i>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-button">
-                      <button type="submit" class="button radius-10">Submit <i class="lni lni-telegram-original"></i> </button>
-                    </div>
-                  </div>
-                </div>
-              </form> -->
             </div>
-
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-5 order-first order-lg-last">
-            <div class="left-wrapper">
-              <div class="section-title mb-40">
-                <h3 class="mb-15">Get in touch</h3>
-                <p>If you want to learn more before applying or want to partner with us in bringing this opportunity to more founders please reach out!</p>
+      <!-- Team Section -->
+      <section id="team" class="team-section">
+        <div class="container">
+          <div class="team-intro">
+            <blockquote>
+              "It’s about knowing you have people there to support you. It’s a
+              big boost, especially early in your journey."
+            </blockquote>
+            <div class="quote-author">
+              <strong>Jeseekia Vaughn</strong>
+              <span>Detroit Hacker House Director</span>
+            </div>
+          </div>
+          <div class="section-header">
+            <h2>Meet Our Amazing Team</h2>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-photo">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813957/jeseekia-vaughn_ghukhr.jpg"
+                  alt="Jeseekia Vaughn"
+                />
               </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-6">
-                  <!-- <div class="single-item">
-                    <div class="icon">
-                      <i class="lni lni-phone"></i>
-                    </div>
-                    <div class="text">
-                      <p></p>
-                    </div>
-                  </div> -->
+              <h3>Jeseekia Vaughn</h3>
+              <span class="team-role">Detroit Hacker House Director</span>
+              <div class="team-social">
+                <a
+                  href="https://linkedin.com/in/jeseekiavaughn"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  >in</a
+                >
+                <a
+                  href="https://instagram.com/metadevgirl"
+                  target="_blank"
+                  aria-label="Instagram"
+                  >ig</a
+                >
+                <a
+                  href="https://youtube.com/@metadevgirl"
+                  target="_blank"
+                  aria-label="YouTube"
+                  >yt</a
+                >
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-photo">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813954/mack-hendricks_wkcxtd.jpg"
+                  alt="Mack Hendricks"
+                />
+              </div>
+              <h3>Mack Hendricks</h3>
+              <span class="team-role">Executive Director</span>
+              <div class="team-social">
+                <a
+                  href="https://www.linkedin.com/in/mackhendricks"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  >in</a
+                >
+                <a
+                  href="https://instagram.com/machinemaker"
+                  target="_blank"
+                  aria-label="Instagram"
+                  >ig</a>
+                <a
+                  href="https://twitch.com/mackhendricks"
+                  target="_blank"
+                  aria-label="Twitch"
+                  >tv</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apply CTA Section -->
+      <section id="apply" class="apply-section">
+        <div class="container">
+          <div class="apply-grid">
+            <div class="apply-content">
+              <h2>Want To Be A Part Of Us?</h2>
+              <p>
+                We believe it takes great people to make a great product. Join
+                us as we're looking for the next wave of builders! Browse our
+                cohorts and find the one that's right for you!
+              </p>
+              <div class="apply-options">
+                <div class="apply-row">
+                  <span class="apply-label">Program</span>
+                  <span class="apply-value">LIPHH Residency</span>
+                  <span class="apply-location">Detroit, MI</span>
                 </div>
-                <div class="col-lg-12 col-md-6">
-                  <div class="single-item">
-                    <div class="icon">
-                      <i class="lni lni-envelope"></i>
-                    </div>
-                    <div class="text">
-                      <p>jeseekia@detroitblacktech.org</p>
-                    </div>
-                  </div>
+                <div class="apply-row">
+                  <span class="apply-label">Program</span>
+                  <span class="apply-value">Community Events</span>
+                  <span class="apply-location">Open to All</span>
                 </div>
-                <div class="col-lg-12 col-md-6">
-                  <div class="single-item">
-                    <div class="icon">
-                      <i class="lni lni-map-marker"></i>
-                    </div>
-                    <div class="text">
-                      <p>Detroit, Michigan, USA</p>
-                    </div>
-                  </div>
+              </div>
+              <div class="apply-buttons">
+                <a
+                  href="https://techtown.submittable.com/submit/2eba68d7-f295-4af7-aac7-32a4857b517b/live-innovate-play-house"
+                  class="btn btn-primary"
+                  target="_blank"
+                >
+                  WSU Students Apply
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a
+                  href="https://forms.gle/pUUgXPBniRpzCR3u6"
+                  class="btn btn-dark"
+                  target="_blank"
+                >
+                  General Interest
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-header">
+              <span class="eyebrow">Get in Touch</span>
+              <h2>Let's Build Something Together</h2>
+              <p>
+                Have questions about the program, events, or partnerships? We'd
+                love to hear from you.
+              </p>
+            </div>
+            <div class="contact-methods">
+              <a
+                href="mailto:jeseekia@detroitblacktech.org"
+                class="contact-method"
+              >
+                <div class="contact-method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="contact-method-info">
+                  <strong>Email Us</strong>
+                  <span>jeseekia@detroitblacktech.org</span>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/detroithackerhouse/"
+                target="_blank"
+                class="contact-method"
+              >
+                <div class="contact-method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-method-info">
+                  <strong>Follow Us</strong>
+                  <span>@detroithackerhouse</span>
+                </div>
+              </a>
+              <div class="contact-method">
+                <div class="contact-method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="contact-method-info">
+                  <strong>Location</strong>
+                  <span>Midtown Detroit, MI</span>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <img
+                src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767814045/dhh-logo-icon_c6qfja.png"
+                alt="Detroit Hacker House"
+                class="logo-icon"
+              />
+              <span class="logo-text"
+                >Detroit<span class="logo-accent">Hacker</span>House</span
+              >
+            </a>
+            <p>
+              An awesome & powerful launchpad for your startup. Remove barriers
+              and build what matters with evaluating in-depth variety of ideas
+              and including the speed of tech adaptation we can build bridges
+              between founders and their customers.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/detroithackerhouse/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/in/jeseekiavaughn"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Home</h4>
+            <ul>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#apply">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            ©2025-2026 Detroit Hacker House · Website built by
+            <a href="https://tr3mediasolutions.com/" target="_blank"
+              >TR3 Media Solutions</a
+            >
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ========================= contact style-6 end ========================= -->
-
-    <!-- ========================= clients-logo start ========================= -->
-    <section class="clients-logo-section pt-100 pb-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="client-logo wow fadeInUp" data-wow-delay=".2s">
-              <!-- <img src="assets/img/clients/brands.svg" alt="" class="w-100"> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========================= clients-logo end ========================= -->
-
-		<!-- ========================= footer style-1 start ========================= -->
-    <footer class="footer footer-style-1">
-      <div class="container">
-        <div class="widget-wrapper">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
-                <div class="logo">
-                  <!-- <a href="#0"> <img src="assets/img/logo/logo.svg" alt=""> </a> -->
-                   Detroit Hacker House
-                </div>
-                <p class="desc">Build. Ship. Learn.</p>
-                <!-- <ul class="socials">
-                  <li> <a href="#0"> <i class="lni lni-facebook-filled"></i> </a> </li>
-                  <li> <a href="#0"> <i class="lni lni-twitter-filled"></i> </a> </li>
-                  <li> <a href="#0"> <i class="lni lni-instagram-filled"></i> </a> </li>
-                  <li> <a href="#0"> <i class="lni lni-linkedin-original"></i> </a> </li>
-                </ul> -->
-              </div>
-            </div>
-            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
-              <!-- <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
-                <h6>Quick Link</h6>
-                <ul class="links">
-                  <li> <a href="#0">Home</a> </li>
-                  <li> <a href="#0">About</a> </li>
-                  <li> <a href="#0">Service</a> </li>
-                  <li> <a href="#0">Contact</a> </li>
-                </ul>
-              </div> -->
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <!-- <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
-                <h6>Services</h6>
-                <ul class="links">
-                  <li> <a href="#0">Web Design</a> </li>
-                  <li> <a href="#0">Web Development</a> </li>
-                  <li> <a href="#0">Seo Optimization</a> </li>
-                  <li> <a href="#0">Blog Writing</a> </li>
-                </ul>
-              </div> -->
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <!-- <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
-                <h6>Help & Support</h6>
-                <ul class="links">
-                  <li> <a href="#0">Support Center</a> </li>
-                  <li> <a href="#0">Live Chat</a> </li>
-                  <li> <a href="#0">FAQ</a> </li>
-                  <li> <a href="#0">Terms & Conditions</a> </li>
-                </ul>
-              </div> -->
-            </div>
-          </div>
-        </div>
-        <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
-          <p>Design and Developed by <a href="https://uideck.com" rel="nofollow" target="_blank">UIdeck</a> Built-with <a href="#">Lindy UI Kit</a></p>
-        </div>
+      <div class="footer-bar">
+        <span class="footer-bar-text"
+          >DETROIT<span class="footer-bar-accent">HACKER</span>HOUSE.COM</span
+        >
       </div>
     </footer>
-    <!-- ========================= footer style-1 end ========================= -->
 
-    <!-- ========================= scroll-top start ========================= -->
-    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
-    <!-- ========================= scroll-top end ========================= -->
-		
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
 
-    <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
+      menuBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            menuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+          }
+        });
+      });
+
+      // Header scroll
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('.site-header');
+        header.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
   </body>
 </html>
