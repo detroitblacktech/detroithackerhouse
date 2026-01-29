@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM35TMQMR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GM35TMQMR8');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media & Press | Detroit Hacker House</title>
+    <meta
+      name="description"
+      content="Detroit Hacker House in the news - press coverage, media features, and articles about our residential accelerator program."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Media Page Specific Styles */
+      .media-hero {
+        padding: 140px 0 60px;
+        background: var(--bg-soft);
+        text-align: center;
+      }
+
+      .media-hero h1 {
+        margin-bottom: 16px;
+      }
+
+      .media-intro {
+        font-size: 1.125rem;
+        color: var(--text-light);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Press Cards Section */
+      .press-section {
+        padding: 80px 0;
+        background: var(--bg);
+      }
+
+      .press-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+      }
+
+      .press-card {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .press-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+        border-color: var(--teal);
+      }
+
+      .press-card-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: var(--bg-gray);
+      }
+
+      .press-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .press-card:hover .press-card-image img {
+        transform: scale(1.05);
+      }
+
+      .press-card-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .press-card-outlet {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--teal);
+        background: var(--teal-light);
+        padding: 4px 10px;
+        border-radius: 100px;
+        margin-bottom: 12px;
+        width: fit-content;
+      }
+
+      .press-card-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+
+      .press-card-summary {
+        font-size: 0.9375rem;
+        color: var(--text-light);
+        line-height: 1.6;
+        margin-bottom: 20px;
+        flex-grow: 1;
+      }
+
+      .press-card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--navy);
+        margin-top: auto;
+      }
+
+      .press-card-link:hover {
+        color: var(--teal);
+      }
+
+      .press-card-link svg {
+        width: 16px;
+        height: 16px;
+        transition: transform 0.2s ease;
+      }
+
+      .press-card-link:hover svg {
+        transform: translateX(4px);
+      }
+
+      /* Press Kit Section */
+      .press-kit-section {
+        padding: 80px 0;
+        background: var(--bg-soft);
+      }
+
+      .press-kit-box {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 48px;
+        background: var(--navy);
+        border-radius: var(--radius-lg);
+        color: white;
+      }
+
+      .press-kit-box h2 {
+        color: white;
+        margin-bottom: 16px;
+      }
+
+      .press-kit-box p {
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .press-kit-box .btn-primary {
+        background: var(--teal);
+        border-color: var(--teal);
+        color: var(--navy);
+      }
+
+      .press-kit-box .btn-primary:hover {
+        background: white;
+        border-color: white;
+      }
+
+      .press-contact {
+        margin-top: 24px;
+        font-size: 0.9375rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .press-contact a {
+        color: var(--teal);
+        font-weight: 500;
+      }
+
+      .press-contact a:hover {
+        color: white;
+      }
+
+      /* Empty State */
+      .press-empty {
+        text-align: center;
+        padding: 60px 24px;
+        background: var(--bg-soft);
+        border-radius: var(--radius);
+        border: 2px dashed var(--border);
+      }
+
+      .press-empty h3 {
+        margin-bottom: 12px;
+        color: var(--text-muted);
+      }
+
+      .press-empty p {
+        color: var(--text-muted);
+        font-size: 0.9375rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .press-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .press-grid {
+          grid-template-columns: 1fr;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+
+        .press-kit-box {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767814045/dhh-logo-icon_c6qfja.png"
+            alt="Detroit Hacker House"
+            class="logo-icon"
+          />
+          <span class="logo-text"
+            >Detroit<span class="logo-accent">Hacker</span>House</span
+          >
+        </a>
+        <div class="nav-links">
+          <a href="index.html#program">Program</a>
+          <a href="live-inn-play.html">LIPH Residency</a>
+          <a href="index.html#community">Community</a>
+          <a href="events.html">Events</a>
+          <a href="media.html" class="active">Media</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            href="https://forms.gle/geNWTCZekTbaqP9q9"
+            target="_blank"
+            class="btn btn-primary"
+            >Apply Now</a
+          >
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="media-hero">
+        <div class="container">
+          <span class="eyebrow">In The News</span>
+          <h1>Media & <span class="text-accent">Press</span></h1>
+          <p class="media-intro">
+            See what people are saying about Detroit Hacker House and our
+            mission to build the next generation of Detroit founders.
+          </p>
+        </div>
+      </section>
+
+      <!-- Press Cards Section -->
+      <section class="press-section">
+        <div class="container">
+          <div class="press-grid">
+            <!-- Press Card 1 - Example/Placeholder -->
+            <article class="press-card">
+              <div class="press-card-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/0574de990423bea99c131a033c145a3a_yx8xes.png"
+                  alt="Detroit Hacker House featured in article"
+                />
+              </div>
+              <div class="press-card-content">
+                <span class="press-card-outlet">Example Outlet</span>
+                <h3 class="press-card-title">
+                  Detroit Hacker House Launches New Residential Accelerator
+                  Program
+                </h3>
+                <p class="press-card-summary">
+                  A new initiative aims to support emerging tech founders in
+                  Detroit through a unique live-in accelerator model, providing
+                  housing, mentorship, and resources to help startups launch.
+                </p>
+                <a href="#" class="press-card-link" target="_blank">
+                  Read Article
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Press Card 2 - Example/Placeholder -->
+            <article class="press-card">
+              <div class="press-card-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/0574de990423bea99c131a033c145a3a_yx8xes.png"
+                  alt="TechTown Detroit partnership announcement"
+                />
+              </div>
+              <div class="press-card-content">
+                <span class="press-card-outlet">Example Outlet</span>
+                <h3 class="press-card-title">
+                  TechTown Detroit Partners with Hacker House for Student
+                  Innovation Program
+                </h3>
+                <p class="press-card-summary">
+                  Wayne State University students can now apply for a summer
+                  residency program combining entrepreneurship education with
+                  hands-on startup building experience.
+                </p>
+                <a href="#" class="press-card-link" target="_blank">
+                  Read Article
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Press Card 3 - Example/Placeholder -->
+            <article class="press-card">
+              <div class="press-card-image">
+                <img
+                  src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767813518/0574de990423bea99c131a033c145a3a_yx8xes.png"
+                  alt="Detroit Black Tech ecosystem growth"
+                />
+              </div>
+              <div class="press-card-content">
+                <span class="press-card-outlet">Example Outlet</span>
+                <h3 class="press-card-title">
+                  Building Detroit's Tech Ecosystem One Founder at a Time
+                </h3>
+                <p class="press-card-summary">
+                  Detroit Black Tech's latest initiative focuses on removing
+                  barriers for underrepresented founders through community,
+                  mentorship, and a unique residential model.
+                </p>
+                <a href="#" class="press-card-link" target="_blank">
+                  Read Article
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 
+            =============================================
+            ADD MORE PRESS CARDS BELOW
+            Copy this template and fill in the details:
+            =============================================
+            
+            <article class="press-card">
+              <div class="press-card-image">
+                <img 
+                  src="IMAGE_URL_HERE" 
+                  alt="Description of image"
+                />
+              </div>
+              <div class="press-card-content">
+                <span class="press-card-outlet">OUTLET NAME</span>
+                <h3 class="press-card-title">Article Title Here</h3>
+                <p class="press-card-summary">Short summary about 300 characters describing the article content and key takeaways for readers.</p>
+                <a href="ARTICLE_URL_HERE" class="press-card-link" target="_blank">
+                  Read Article
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+            </article>
+            
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Press Kit / Contact Section -->
+      <section class="press-kit-section">
+        <div class="container">
+          <div class="press-kit-box">
+            <h2>Press Inquiries</h2>
+            <p>
+              Interested in covering Detroit Hacker House? We'd love to connect
+              with you. Reach out for interviews, quotes, or additional
+              information.
+            </p>
+            <a
+              href="mailto:jeseekia@detroitblacktech.org"
+              class="btn btn-primary"
+            >
+              Contact Press Team
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+            <p class="press-contact">
+              Or email directly:
+              <a href="mailto:jeseekia@detroitblacktech.org"
+                >jeseekia@detroitblacktech.org</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img
+                src="https://res.cloudinary.com/dby7xkzbm/image/upload/v1767814045/dhh-logo-icon_c6qfja.png"
+                alt="Detroit Hacker House"
+                class="logo-icon"
+              />
+              <span class="logo-text"
+                >Detroit<span class="logo-accent">Hacker</span>House</span
+              >
+            </a>
+            <p>
+              An awesome & powerful launchpad for your startup. Remove barriers
+              and build what matters with evaluating in-depth variety of ideas
+              and including the speed of tech adaptation we can build bridges
+              between founders and their customers.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/detroithackerhouse/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/in/jeseekiavaughn"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Home</h4>
+            <ul>
+              <li><a href="index.html#program">Program</a></li>
+              <li><a href="index.html#community">Community</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="index.html#apply">Apply</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="index.html#team">Team</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="media.html">Media</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            ©2025-2026 Detroit Hacker House · Website built by
+            <a href="https://tr3mediasolutions.com/" target="_blank"
+              >TR3 Media Solutions</a
+            >
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span class="footer-bar-text"
+          >DETROIT<span class="footer-bar-accent">HACKER</span>HOUSE.COM</span
+        >
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+
+      menuBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      // Header scroll
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('.site-header');
+        header.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
